@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AI-Chatbot/static/css/main.ff652b56.css",
-    "main.js": "/AI-Chatbot/static/js/main.68c7ccec.js",
+    "main.css": "/AI-Chatbot/static/css/main.2ff607b7.css",
+    "main.js": "/AI-Chatbot/static/js/main.8e806acf.js",
     "index.html": "/AI-Chatbot/index.html",
-    "main.ff652b56.css.map": "/AI-Chatbot/static/css/main.ff652b56.css.map",
-    "main.68c7ccec.js.map": "/AI-Chatbot/static/js/main.68c7ccec.js.map"
+    "main.2ff607b7.css.map": "/AI-Chatbot/static/css/main.2ff607b7.css.map",
+    "main.8e806acf.js.map": "/AI-Chatbot/static/js/main.8e806acf.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff652b56.css",
-    "static/js/main.68c7ccec.js"
+    "static/css/main.2ff607b7.css",
+    "static/js/main.8e806acf.js"
   ]
 }
