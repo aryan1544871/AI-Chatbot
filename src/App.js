@@ -7,6 +7,11 @@ function App() {
   const [previousChats, setPreviousChats] = useState([]);
   const [currentTitle, setCurrentTitle] = useState(null);
 
+  function handleEnterKey(event){
+    if(event.key === 'Enter'){
+      runModel();
+    }
+  }
   function createNewChat(){
     setMessage(null);
     setValue ("");
@@ -72,7 +77,7 @@ function App() {
       </ul>
       <div className = "bottom-container">
         <div className = "input-container">
-          <input value = {value} onChange = {(e) => setValue(e.target.value)}/>
+          <input value = {value} onChange = {(e) => setValue(e.target.value)} onKeyDown={handleEnterKey}/>
           <div id = "submit" onClick = {runModel}>➢</div>
         </div>
         <p className="info">AI-Chatbot</p>
