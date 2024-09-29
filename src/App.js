@@ -28,6 +28,7 @@ function App() {
     const res = await llamaModel(value);
     const textResponseObject = res.choices[0].message;
     setMessage(textResponseObject);
+
   }
 
   useEffect(()=>{
@@ -53,7 +54,6 @@ function App() {
 
   },[message, currentTitle])
 
-  console.log(previousChats)
   const currentChat = previousChats.filter (preChats => preChats.title === currentTitle)
   const uniqueTitles = Array.from (new Set (previousChats.map (preChats => preChats.title )));
   return (
@@ -77,7 +77,7 @@ function App() {
       </ul>
       <div className = "bottom-container">
         <div className = "input-container">
-          <input value = {value} onChange = {(e) => setValue(e.target.value)} onKeyDown={handleEnterKey}/>
+          <input placeholder='Message AI-Chatbot' value = {value} onChange = {(e) => setValue(e.target.value)} onKeyDown={handleEnterKey}/>
           <div id = "submit" onClick = {runModel}>➢</div>
         </div>
         <p className="info">AI-Chatbot</p>
