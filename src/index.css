@@ -66,19 +66,21 @@ nav {
 .info {
     color : rgba(255,255,255,0.5);
     font-size: 11px;
-    padding : 10px;
+    padding : 0px;
+    margin : 2px;
 }
-.bottom-section{
+.bottom-container{
     width : 100%;
     display : flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
 }
 .input-container{
     position: relative;
     width: 100%;
     max-width: 650px;
+
 }
 
 input {
@@ -104,4 +106,30 @@ input:focus  {
     bottom : 13px;
     right : 0px;
     cursor : pointer;
+}
+
+.feed {
+    overflow-y: auto;
+    width : 100%;
+    padding : 0 0 ;
+
+}
+
+.feed li{
+ display : flex;
+ background-color: #444654;
+ width : 95%;
+ padding : 10px;
+ margin : 5px 0;
+
+}
+
+.feed p {
+    color : rgba(255,255,255,0.9);
+    font-size: 12px;
+    text-align: left;
+}
+
+.feed p.role{
+    min-width : 100px;
 }
