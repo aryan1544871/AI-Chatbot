@@ -26,7 +26,7 @@ function App() {
 
   async function runModel(){
     const res = await llamaModel(value);
-    const textResponseObject = res.choices[0].message;
+    const textResponseObject = res.messages.choices[0].message;
     setMessage(textResponseObject);
 
   }
